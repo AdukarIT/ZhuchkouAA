@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+  		<meta charset="UTF-8">
+  		<title>Добавить фото</title>
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href='index.html'><img src="pics/main.jpg" alt="main"></a>
+				<br>Instagram
+				
+			</h1>
+		</header>
+		<main>
+			<h2><a href='feed.html'>Лента</a>
+			</h2>
+			<h3>Создать пост
+			</h3>
+			<form action='feed.html' method='get'>
+				<textarea rows='4' cols='33' placeholder='Текст поста' required></textarea>
+				<input type='text' name='hashtag' placeholder='#хэштеги(необязательно)' >
+				<p>Вставить видео <input type='file' name='video' accept='video/*' multiple>
+				<p>Вставить изображение <input type='file' name='pictures' accept=".png, .jpg, .jpeg" multiple>
+				<p><button type='submit'>Опубликовать</button>
+			</form>
+
+		</main>
+	</body>
+</html>

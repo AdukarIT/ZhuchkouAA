@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+  		<meta charset="UTF-8">
+  		<title>Instagram</title>
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href='index.html'><img src="pics/main.jpg" alt="main"></a>
+				<br>Instagram
+			</h1>
+		</header>
+		<main>
+			<fieldset>
+				<legend>Вход</legend>
+				<form action='feed.html' method='get'>
+					<p>Логин: <input type='email' name='email'  required placeholder='Логин'>
+					<p>Пароль: <input type='password' name='password' required placeholder='Пароль'>
+					<label>Запомнить
+						<input type='checkbox' name='remember' >
+					<button type='submit'>Войти</button>
+					</label>
+				</form>
+			</fieldset>
+			<fieldset>
+				<legend>Регистрация</legend>
+				<form action='feed.html' method='get'>
+					<p>Имя: <input type='text' name='name'  required placeholder='Введите ваше имя'>
+					<p>Логин: <input type='email' name='email'  required placeholder='Введите ваш email'>
+					<p>Пароль: <input type='password' name='password' required placeholder='Придумайте пароль'>
+					<p>Пароль еще раз: <input type='password' name='password' required placeholder='Повторите пароль'>
+					<label>Согласен на обработку данных
+						<input type='checkbox' name='agree' required>
+					</label>
+					<button type='submit'>Зарегистрироваться</button>
+				</form>
+			</fieldset>
+
+		</main>
+	</body>
+</html>
