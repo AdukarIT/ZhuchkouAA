@@ -26,12 +26,13 @@ span{
 	font-family: 'Times new roman', serif;
  	font-size: 14pt;
 }
-.quotes:before,.quotes:after{
-content: '"';
+.quotes:before {
+	content: '\AB';
 }
-.minsk {
-	margin-bottom:80px;
+.quotes:after{
+	content: '\BB';
 }
+
 body {
 	width:800px;
 	height:1050px;
