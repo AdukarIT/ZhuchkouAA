@@ -1,0 +1,40 @@
+.center {
+	text-align: center;
+}
+.bold {
+	font-weight: bold;
+}
+.first {
+	margin-top:80px;
+	margin-bottom:240px;
+}
+.second {
+	margin-top:-10px;
+	
+}
+.second2 {
+	margin-top:-15px;
+}
+span{
+	text-decoration: underline;
+}
+.h3 {
+	margin-top:140px;
+	margin-left:380px;
+}
+.font {
+	font-family: 'Times new roman', serif;
+ 	font-size: 14pt;
+}
+.quotes:before,.quotes:after{
+content: '"';
+}
+.minsk {
+	margin-bottom:80px;
+}
+body {
+	width:800px;
+	height:1050px;
+  	border-width: 3px;
+  	border-style: solid;
+}
