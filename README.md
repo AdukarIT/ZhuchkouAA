@@ -14,4 +14,6 @@
 ### Задание 2 [Сайт руководств по изучению иностранных языков](https://github.com/AdukarIT/ZhuchkouAA/tree/master/html/homework5.2)
 ## Основы CSS
 ### Практика [Реферат](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework6)
+## Float. Псевдоклассы и составные селекторы
+### Задание 1 [Форма заказа в интернет-магазине](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework8)
 
