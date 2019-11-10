@@ -24,21 +24,10 @@ header {
     font-size: 15px;
     list-style: none;
     text-align:center;
+    
 }
 
-/*.menu {
-	position: relative;
-	left:calc(50% - 304px);
-	float:left;
-	width:150px;
-	height:40px;
-	background-color: #66CDAA;
-	border:1px solid #000;
- 	font-family: Arial, sans-serif; 
-    font-size: 15px;
-    list-style: none;
-    text-align:center;
-    */
+
 
 .submenu{
 
@@ -107,3 +96,11 @@ footer {
 	background-color: midnightblue;
 	color: #66CDAA;
 }
+img {
+	height:23px;
+	width:23px;
+}
+body {
+	background:#B0C4DE;
+}
+	
