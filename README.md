@@ -16,4 +16,9 @@
 ### Практика [Реферат](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework6)
 ## Float. Псевдоклассы и составные селекторы
 ### Задание 1 [Форма заказа в интернет-магазине](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework8)
+## CSS. Стилистическое оформление элементов
+### Задание 1 [Пляж](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.1)
+### Задание 2 [Лайк](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.2)
+### Задание 3 [Чекбокс]
+### Задание 4 [Header магазина](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.4)
 
