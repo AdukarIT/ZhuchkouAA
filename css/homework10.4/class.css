@@ -1,34 +1,93 @@
+* {
+
+	font-family:arial black;
+}
 .logo, form, .navigation, .contacts{
-	border:1px Solid #000;
+	border:1px solid #000;
   	width:24%;
   	height:100px;
- 	Display:block;
- 	Float:left;
-	Padding:0px;
- 	Margin:0px;
-
+ 	display:block;
+ 	float:left;
+	padding:0px;
+ 	margin:0px;
+	background-color: black;
 }
 .search {
-	margin:40px 11vh;
+	
 	max-width:50%;
+	
+}
+input {
+	position: relative;
+	
 }
 a[class='border'] {
+	transition: .4s ease-in-out;
 	display:block;
 	float:left;
   	background-color: red;
   	width:calc(33.3333% - 1px);
   	height:100px;
 	text-align:center;
-	border-right:1px Solid #000;
+	border-right:1px solid #000;
+	text-decoration:none;
 }
 a[class='notBorder'] {
+	transition: .4s ease-in-out;
 	display:block;
 	float:left;
   	background-color: red;
   	width:calc(33.3333%);
   	height:100px;
 	text-align:center;
+	text-decoration:none;
 }
 .contacts {
 	text-align: center;
+	color:red;
+	transition: .4s ease-in-out;
+
+	
+}
+.logo > img {
+	position: absolute;
+	top:20px;
+	left:20px;
+
+}
+.text {
+	position: relative;
+	top:34%;
+
+
+}
+ form > img {
+ 	position: relative;
+ 	height:24.86px;
+ 	top:40px;
+ 	
+ }
+
+input {
+	top:33px;
+}
+a:visited:hover {
+
+	background-color: black;
+	color:red;
+
+
+}
+a:link {
+    color: black; /* Цвет ссылок */
+   }
+a:visited {
+    color: black; /* Цвет посещенных ссылок */
+}
+.contacts:hover {
+	background-color: red;
+	color:black;
+}
+.blackText {
+	color:black;
 }

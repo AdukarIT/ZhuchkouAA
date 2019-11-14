@@ -1,0 +1,44 @@
+
+#agree {
+	display: none;
+	
+	
+}
+.agree:checked + .agreeLabel:after{
+	transform:translateX(17px);
+}
+.agree:checked + .agreeLabel:before{
+	background-color:midnightblue;
+	
+}
+.agreeLabel {
+	position: relative;
+	transition: color 0.3s linear;
+
+}
+.agreeLabel:before {
+	position: absolute;
+	display:block;
+	content:'';
+	width:38.5px;
+	height: 22px;
+	border-radius:15px;
+	border:1px solid #000;
+	background-color: gray;
+	transition: background-color 0.3s linear;
+	
+}
+.agreeLabel:after {
+	position: relative;
+	background-color: white;
+	display: block;
+	content:'';
+	width:21px;
+	height:21px;
+	border-radius:50%;
+	border:1px solid #000;
+	transition: transform 0.3s linear;
+	top:0.4px;
+
+
+}

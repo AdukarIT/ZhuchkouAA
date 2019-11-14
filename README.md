@@ -19,6 +19,6 @@
 ## CSS. Стилистическое оформление элементов
 ### Задание 1 [Пляж](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.1)
 ### Задание 2 [Лайк](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.2)
-### Задание 3 [Чекбокс]
+### Задание 3 [Чекбокс](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.3)
 ### Задание 4 [Header магазина](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.4)
 

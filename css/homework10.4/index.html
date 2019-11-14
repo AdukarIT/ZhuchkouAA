@@ -7,14 +7,16 @@
   </head>
   <body>
     <header>
-        <span class='logo'>Logo</span>
-        <form><input class='search' type='text' required placeholder="поиск"></form>
-        <span class='navigation'>
-          <a class='border' href="#"><span class='text'>Каталог</span></a>
-          <a class='border' href="#">Новости</a>
-          <a class='notBorder' href="#">О нас</a>
+        <span class='logo'><img src="data:image/png;base64,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" alt="logo">
         </span>
-        <span class='contacts'>Контакты: +375 25 555-55-55</span>
+        <form method='Post'><img src="search.png" alt='search'><input class='search' type='text' required placeholder="поиск">
+        </form>
+        <span class='navigation'>
+          <a class='border' href="#"><span class='text'>Ката<wbr>лог</span></a>
+          <a class='border' href="#"><span class='text'>Ново<wbr>сти</span></a>
+          <a class='notBorder' href="#"><span class='text'>О нас</span></a>
+        </span>
+        <span class='contacts'><span class='text'>Контакты <br /><span class='blackText'>+375 25 555-55-55</span></span></span>
         
     </header>
   </body>
