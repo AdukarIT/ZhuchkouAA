@@ -1,0 +1,34 @@
+.logo, form, .navigation, .contacts{
+	border:1px Solid #000;
+  	width:24%;
+  	height:100px;
+ 	Display:block;
+ 	Float:left;
+	Padding:0px;
+ 	Margin:0px;
+
+}
+.search {
+	margin:40px 11vh;
+	max-width:50%;
+}
+a[class='border'] {
+	display:block;
+	float:left;
+  	background-color: red;
+  	width:calc(33.3333% - 1px);
+  	height:100px;
+	text-align:center;
+	border-right:1px Solid #000;
+}
+a[class='notBorder'] {
+	display:block;
+	float:left;
+  	background-color: red;
+  	width:calc(33.3333%);
+  	height:100px;
+	text-align:center;
+}
+.contacts {
+	text-align: center;
+}

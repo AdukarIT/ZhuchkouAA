@@ -1,0 +1,30 @@
+@font-face {
+    font-family: social; 
+    src: url(fonts/social.ttf), url(fonts/social.woff);
+}
+input[type="checkbox"] {
+    display: none;
+}
+.icon {
+	position: relative;
+	margin: 0 auto;
+	font-family: social;
+	font-size:200px;
+	text-align: center;
+	
+}
+.redHeart{
+	color:gray;
+	cursor: pointer;
+}
+
+
+.redHeart:hover {
+    color: blue;
+}
+#like:checked + .redHeart{
+    color:red;
+}
+#like:checked + .redHeart:hover{
+    color:rgba(255,0,0,0.7);
+}
