@@ -8,13 +8,13 @@
 	<body>
 		<header>
 			<h1 >
-				Интернет-магазин "Техно-Плюс" <a href="tel:+375255555555">+375 25 555-55-55</a>
+				Интернет-магазин "Техно-Плюс" <a class='nowrap' href="tel:+375255555555">555-55-55</a>
 			</h1>
 		</header>
 		<main>	
 			<div>
 				<ul class='topmenu'>
-					<li class='menu'><a  href=''>Бытовая техника</a>
+					<label><li class='menu'><input type="checkbox" #menu><div class='menuButton'>Бытовая техника</div>
 						<ul class='submenu'>
 							<li><a href=''>Стиральные машины</a></li>
 							<li><a href=''>Пылесосы</a></li>
@@ -22,9 +22,9 @@
 							<li><a href=''>Утюги</a></li>
 							<li><a href=''>Электровеники</a></li>
 							<li><a href=''>Сушилки для обуви</a></li>
-						</ul>
+						</ul></label>
 					</li>
-					<li class='menu'><a href=''>Техника для кухни</a>
+					<label><li class='menu'><input type="checkbox" #menu><div class='menuButton'>Техника для кухни</div>
 						<ul class='submenu'>
 							<li><a href=''>Холодильники</a></li>
 							<li><a href=''>Кухонные плиты</a></li>
@@ -33,16 +33,16 @@
 							<li><a href=''>Ростеры, мини-печи</a></li>
 							<li><a href=''>Вытяжки</a></li>
 							<li><a href=''>Микроволновые печи</a></li>
-						</ul>
+						</ul></label>
 					</li>
-					<li class='menu'><a href=''>Компьютерная техника</a>
+					<label><li class='menu'><input type="checkbox" #menu><div class='menuButton'>Компьютерная техника</div>
 						<ul class='submenu'>
 							<li><a href=''>Ноутбуки</a></li>
 							<li><a href=''>Планшеты</a></li>
 							<li><a href=''>Компьютеры, моноблоки</a></li>
 							<li><a href=''>Игровые приставки</a></li>
 							<li><a href=''>Серверное оборудование</a></li>
-						</ul>
+						</ul></label>
 					</li>
 					<li class='menu'><a href=''>Корзина</a>
 						<ul class='submenu'>
@@ -54,8 +54,8 @@
 			</div>
 			<form  style="clear: left" method='POST'>
 				Фамилия и имя: <input type='text' name='name' required placeholder='Введите имя и фалимию'>
-				<span>Номер телефона: <input type='text' name='tel' required placeholder='Введите номер телефона'></span>
-				<span>Email: <input type='email' name='email'  required placeholder='Введите Email'></span>
+				<span class='nowrap'>Номер телефона: <input type='text' name='tel' required placeholder='Введите номер телефона'></span>
+				<span class='nowrap'>Email: <input type='email' name='email'  required placeholder='Введите Email'></span>
 				<p>Выберите способ доставки:</p>
 				<input class='pickup' type='radio' required  name='delivery'>Самовывоз(Минск, Немига 3)
 				<input class='courier' type='radio' required name='delivery'>Курьером по Минску
@@ -71,8 +71,10 @@
 				</div>
 
 				<div >Я прочитал и согласен с <a href=''>условиями доставки</a>
+					<br>
 					<input class='agree' type="checkbox" id='agree' required>
 					<label class='agreeLabel' for='agree'></label>
+					<br>
 					<input class='button' type="submit"  value="Подтвердить заказ" >
 				
 				
