@@ -1,10 +1,9 @@
 * {
-
+	font-size:13px;
 	font-family:arial black;
 }
 .logo, form, .navigation, .contacts{
 	border:1px solid #000;
-  	width:24%;
   	height:100px;
  	display:block;
  	float:left;
@@ -12,10 +11,22 @@
  	margin:0px;
 	background-color: black;
 }
+.logo, form {
+	width:19%;
+}
+.contacts {
+	width:20%;
+}
+.navigation {
+	width:calc(42% - 7px);
+}
 .search {
 	
 	max-width:50%;
 	
+}
+.text {
+	line-height: 100px;
 }
 input {
 	position: relative;
@@ -42,10 +53,15 @@ a[class='notBorder'] {
 	text-align:center;
 	text-decoration:none;
 }
+
 .contacts {
 	text-align: center;
-	color:red;
 	transition: .4s ease-in-out;
+	line-height: 23px;
+	background-color: red;
+	color:black;
+	border-left:0px;
+	line-height: 100px;
 
 	
 }
@@ -55,12 +71,8 @@ a[class='notBorder'] {
 	left:20px;
 
 }
-.text {
-	position: relative;
-	top:34%;
 
 
-}
  form > img {
  	position: relative;
  	height:24.86px;
@@ -84,10 +96,6 @@ a:link {
 a:visited {
     color: black; /* Цвет посещенных ссылок */
 }
-.contacts:hover {
-	background-color: red;
-	color:black;
-}
-.blackText {
-	color:black;
-}
+
+
+

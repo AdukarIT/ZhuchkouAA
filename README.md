@@ -21,4 +21,6 @@
 ### Задание 2 [Лайк](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.2)
 ### Задание 3 [Чекбокс](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.3)
 ### Задание 4 [Header магазина](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.4)
+## Адаптивная вёрстка
+### Практика 1 [Адаптивная вёрстка сайта](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/practice/Adaptive_layout)
 

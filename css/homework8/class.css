@@ -2,41 +2,37 @@
 	text-decoration: none;
 	font-family: helvetica;
 	color:midnightblue;
+
+}
+header {
+	text-align:center;
+	background-color: midnightblue;
+	
+
 }
 h1 {
 	display:inline-block;
 	color: #66CDAA;
 	width:100%;
-	height:100%;
 	
+
+
 }
-h1:hover{
-	
-	transition: 3s ease-in-out;
-	color:  midnightblue;
-	background-color: midnightblue;
-}
-h1:hover span{
-	transition: 3s ease-in-out;
-	color:rgb(102, 205, 170);
+
+h1>a {
+	color: #66CDAA;
 }
 
 
-h1 > span {
-	position: absolute;
-	color:rgba(255,255,255,0);
-	left:40%;
-}
+
 
 h3 {
 	margin-top:10px;
 	margin-bottom:0px;
 }
-header {
-	text-align:center;
-	background-color: midnightblue;
-	margin-bottom:100px;
-}
+
+
+
 /* ссылки меню */
 li>a {
 	display: block;
@@ -47,16 +43,16 @@ li>a {
 /* блок главного меню  */
 .menu {
 	position: relative;
-	left:10%;
 	float:left;
-	top:-100px;
-	width:20%;
+	width:calc(25% - 2px);
 	height:40px;
 	background-color: #66CDAA;
 	border:1px solid #000;
  	font-weight: bold;
     list-style: none;
     text-align:center;
+    margin-bottom:30px;
+	
     }
 /* цвета выпадающего меню  */
 .menu:hover{
@@ -84,11 +80,9 @@ li>a {
 }
 /* выпадающее меню */
 .submenu{
-
 	font-weight: normal;
 	padding:0;
   	position: absolute;
-	top:42px;
 	display:none;
 	width:100%;
 	height:auto;
@@ -102,12 +96,13 @@ li>a {
 } 
 
 .topmenu {
-	 padding-left:0px;
+	padding:0px;
+	margin:0;
+
 
 }
 form {
 	background-color: #66CDAA;
-	
 	width:100%;
 	height:460px;
 	border:1px solid #000;
@@ -151,7 +146,7 @@ iframe {
 	
 }
 .agree:checked + .agreeLabel:after{
-	transform:translateX(17px);
+	transform:translateX(16px);
 }
 .agree:checked + .agreeLabel:before{
 	background-color:midnightblue;
@@ -160,20 +155,21 @@ iframe {
 .agreeLabel {
 	position: relative;
 	transition: color 0.3s linear;
-	left:48%;
+
 	
 
 }
 .agreeLabel:before {
-	position: absolute;
+	
 	display:block;
 	content:'';
-	width:38.5px;
+	width:40px;
 	height: 22px;
 	border-radius:15px;
 	border:1px solid #000;
 	background-color: gray;
 	transition: background-color 0.3s linear;
+	margin:0 auto;
 	
 }
 .agreeLabel:after {
@@ -181,12 +177,14 @@ iframe {
 	background-color: white;
 	display: block;
 	content:'';
-	width:21px;
-	height:21px;
+	width:20px;
+	height:20px;
 	border-radius:50%;
 	border:1px solid #000;
 	transition: transform 0.3s linear;
-	top:0.4px;
+	margin:0 auto;
+	bottom:23px;
+	right:8px;
 }
 
 
