@@ -18,7 +18,7 @@ header {
 	display: block;
 
 }
-heading {
+.first-text {
 	font-style:italic;
 	width:100%;
 	height:20%;
@@ -26,7 +26,7 @@ heading {
 	display:block;
 	margin-bottom:10px;
 }
-lead {
+.last-post {
 	border:2px solid;
 	border-color:rgba(0,0,0,0.4);
 	border-radius: 15px;
