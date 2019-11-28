@@ -23,4 +23,6 @@
 ### Задание 4 [Header магазина](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework10.4)
 ## Адаптивная вёрстка
 ### Практика 1 [Адаптивная вёрстка сайта](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/practice/Adaptive_layout)
-
+### Практика 2 [Адаптивная вёрстка сайта](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/practice/Adaptive_layout2)
+## Flexbox
+### Задание 1 [Header для лэндинга курсов подготовки к ЦТ от Адукар](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework12.1)

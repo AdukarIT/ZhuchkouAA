@@ -1,0 +1,195 @@
+* {
+	margin:0;
+	color:#ffffff;
+	text-align: center;
+	font-family:'Roboto', Arial, sans-serif;
+	line-height:1.55;
+}
+body {
+	background-image:linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(65,33,21,0.6)), url(image/kct-2019.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:120vh;
+}
+
+/* Соотношение блоков */
+
+.logo {
+	flex-grow: 8;
+	text-align: left;
+}
+.center {
+	font-weight:bold;
+	flex-grow: 10;
+}
+.contacts {
+	flex-grow: 3;
+	text-align: right;
+	margin-right:10px;
+}
+.icon {
+	flex-grow: 1;
+	text-align: left;
+	height:30px;
+}
+a > img {
+	max-width: 150px;
+}
+a  {
+	padding:0 13px;
+	text-decoration: none;
+}
+.link {
+	padding:0 3px;
+}
+
+.full {
+	display: flex;
+	margin:2% 2% 0 2%;
+	align-items: center;
+}
+h1 {
+	width:670px; 
+	margin:0 auto 20px;
+	font-size:61px;
+}
+.description {
+	display:flex;
+	justify-content: space-around;
+	font-size:16px;
+}
+.column {
+	display: inline-block;
+	width:220px;
+	height:81px;
+	text-align:left;
+	font-weight: 400;
+}
+h2 {
+	margin-top:5%;
+	font-weight: 300;
+}
+.button {
+	font-weight: bold;
+	width: 320px;
+	height:55px;
+	border-radius: 5px;
+	background-color:#e55;
+	margin:1% auto 0 ;
+	line-height: 55px;
+}
+.low {
+	display:none;
+}
+.menu-nav {
+	visibility: hidden;
+}
+@media (max-width:1000px) {
+	h1 {
+		font-size:30px;
+		width:600px; 
+		margin-top:10vh;
+	}
+	.logo {
+		align-self: center;
+		z-index: 4;
+	}
+	.description{
+		justify-content:center;
+		flex-direction:column;
+	}
+	.column {
+		height:52px;
+		width:390px;
+		font-size:17px;
+		margin-bottom:20px;
+	}
+	div > img {
+		width:40px;
+	}
+	.full {
+		display:none;
+	}
+	.low {
+		display: flex;
+		background-color:rgba(238, 85, 85, 0.78);
+		margin:0;
+		padding:0 20px;
+		height:40px;
+	}
+	a {
+		padding:0;
+	}
+	a > img {
+	height: 20px;
+	}
+	/* кнопка бургер  */
+	.menu-btn {
+		height:20px;
+		width:28px;
+		align-self: center;
+		z-index: 4;
+		position:relative;
+	}
+	.menu-btn span,
+	.menu-btn span::before,
+	.menu-btn span::after {
+		position: absolute;
+		width:28px;
+		height:3px;
+		top:50%;
+		margin-top:-1.5px;
+		left:50%;
+		margin-left:-14px;
+		background-color:white;
+	}
+	.menu-btn span::before,
+	.menu-btn span::after {
+		content:'';
+		display: block;
+		transition: 0.3s;
+	}
+	.menu-btn span::before {
+		transform:translateY(-8px);
+	}
+	.menu-btn span::after{
+		transform:translateY(8px);
+	}   
+	.menu-btn_active span:before {
+  		transform: rotate(45deg);	
+	}
+	.menu-btn_active span:after {
+  		transform: rotate(-45deg);
+  	}   
+  	.menu-btn_active span {
+  		height:0;
+  	}
+  	/* выезжающее меню */
+	.menu-nav__link {
+		display:inline-block;
+		margin:0 0 20px;
+		text-decoration: none;
+	}
+	.menu-nav {
+		display: flex;
+		padding:50px 0;
+		background-color:#2e2d2d;
+		font-weight: 500;
+		transition:0.5s;
+		transform:translateY(-500px);
+		visibility: hidden;
+		position:absolute;
+		flex-direction: column;
+		top:0;
+		width:100%;
+		height:350px;
+	}
+	.icon-red {
+		padding-top:40px;
+	}
+	.menu-nav_active {
+		transform:translateY(0px);
+		visibility: visible;
+	}
+
+}
