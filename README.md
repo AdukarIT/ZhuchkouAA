@@ -27,3 +27,7 @@
 ## Flexbox
 ### Задание 1 [Header для лэндинга курсов подготовки к ЦТ от Адукар](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework12.1)
 ### Задание 2 [Макет страницы новостей ВКонтакте](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework12.2)
+## Эффекты. Анимация
+### Задание 1[Прыгающий мяч](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework13.1)
+### Задание 2[Вентилятор](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework13.2)
+### Задание 3[Спрайты](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework13.3)

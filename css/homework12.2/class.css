@@ -108,7 +108,7 @@ input {
     outline:none;
 }
 input:focus {
-	background:#d9e2ec url(https://vk.com/images/svg_icons/ic_head_loupe.svg) no-repeat;
+	background:white url(https://vk.com/images/svg_icons/ic_head_loupe.svg) no-repeat;
 	background-position: 8px 8px;
 }
 input::placeholder {

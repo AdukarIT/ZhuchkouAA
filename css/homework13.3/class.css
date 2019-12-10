@@ -1,0 +1,32 @@
+body {
+	width:1000px;
+	height:300px;
+	border:3px solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.subzero {
+	background: url('sprite.jpg') no-repeat;
+	display: block;
+	width: 66px;
+    height: 135px;
+	
+}
+
+
+@keyframes subzero{
+	0%{
+		background-position:-66px;
+	}
+	
+	100%{
+		background-position:-462px;
+	}
+}
+.subzero:hover {
+	animation: subzero 0.3s  steps(6);
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+}

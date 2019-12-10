@@ -1,0 +1,22 @@
+div {
+	width:1000px;
+	height:300px;
+	border:3px solid;
+}
+input{
+	display: none;
+}
+
+label {
+	background: url('ball.png') center;
+	display: block;
+	width: 70px;
+    height: 70px;
+    background-size: contain;
+    transition-timing-function: ease-out;
+	transition-duration: 3s;
+}
+input:checked + label{
+	transform: translate(895px, 195px) rotate(360deg) scale(2, 2);
+
+}
