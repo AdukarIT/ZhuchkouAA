@@ -26,3 +26,4 @@
 ### Практика 2 [Адаптивная вёрстка сайта](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/practice/Adaptive_layout2)
 ## Flexbox
 ### Задание 1 [Header для лэндинга курсов подготовки к ЦТ от Адукар](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework12.1)
+### Задание 2 [Макет страницы новостей ВКонтакте](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework12.2)

@@ -120,7 +120,7 @@ img {
 		display: inline-block;
 		width: 80%;
 	}
-	.main-content:nth-child(2n) > div > img {
+	.main-content a:nth-child(2n) > div > img {
 		float:right;
 	}
 }
