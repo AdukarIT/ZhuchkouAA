@@ -1,0 +1,158 @@
+@mixin button ($font-size, $height, $width, $margin){
+	margin:$margin;
+	display: block;
+    width: $width;
+    height: $height;
+    font-size: $font-size;
+    line-height: $height;
+    background: #000;
+    border-radius: .3em;
+    border: 0;
+    color: #eff0f1;
+    font-family: 'OpenSans-Light', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+.top-header {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: BankGothicBold;
+	img{
+		display: block;
+		width:720px;
+		margin-top:48px;
+	}
+	span:nth-child(2) {
+		font-size: 10.8em;
+    	padding-top: .1em;
+    	display: block;
+    	text-transform:uppercase;
+	}
+	span:nth-child(3) {
+		font-size: 6.1em;
+    	letter-spacing: 1.48em;
+    	margin-right: .2em;
+    	text-transform: uppercase;
+    	width: 7.3em;
+	}
+
+}
+
+
+header {
+	background: linear-gradient(to bottom left, #e8e8eb, #f5f6f6);
+    box-shadow: -7px 7px 25px 0 rgba(0, 0, 0, 0.37);
+
+	p {
+		font-family: 'OpenSans-Light', sans-serif;
+		padding: 1em 1% 0 2%;
+    	font-size: 1em;
+    	width: 95%;
+    	color:#646464;
+    	margin:0 auto;
+	}
+	& > a:nth-child(3) {
+		@include button(3.5em, 190px, 11em, 112px auto 0 auto);
+	}
+}
+.socials {
+	font-family: 'fontello', sans-serif;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	height:250px;
+	padding-bottom:2em;
+	a{
+		text-decoration: none;
+		color:black;
+		text-transform:uppercase;
+		font-size: 8em;
+
+	}
+	a:first-child::before {
+		content:"\f1d8";
+	}
+	a:nth-child(2)::before {
+		content:"\f09a";
+	}
+	a:nth-child(3)::before {
+		content:"\f189";
+	}
+	a:nth-child(4)::before {
+		content:"\f16d";
+	}
+	a:last-child::before {
+		content:"\f099";
+	}
+}
+@media (min-width:1000px) {
+		 .top-header {
+		img{
+			width:344px;
+		}
+		span:nth-child(2){
+			font-size: 5em;
+		}
+		span:nth-child(3) {
+			font-size: 2.9em;
+		}
+		}
+		header {
+			padding:0px 32px;
+			p{
+				display: block;
+				width:352px;
+			}
+			& > a:nth-child(3) {
+				@include button(1.5em, 85px, 312px, 77px auto 0 auto);
+				}
+			
+			}	
+		
+		.socials{
+				height:160px;
+				justify-content:center;
+				a{
+					transition: ease-out 0.5s;
+					font-size: 4em;
+					padding:0 .4em 0 .4em;
+				}
+				a:hover {
+					font-size:5em;
+					opacity:0.5;
+				}
+			}
+		
+	}
+@media (min-width:1200px) {
+	header {
+			margin:28px 40px;
+			border-radius: 30px;
+			.top-header{
+				img{
+					margin-top:6em;
+				}
+			}
+			& > a:nth-child(3) {
+				@include button(1.5em, 45px, 340px, 57px auto 0 auto);
+				transition: ease-out 0.4s;
+				transition-delay:0.1s;
+				}
+			& > a:nth-child(3):hover{
+				opacity: 0.6;
+			}
+			
+			.socials{
+				padding-bottom:95px;
+				a{
+					font-size:3em;}
+				a:hover {
+					font-size:4em;
+				}}}}
+		
+

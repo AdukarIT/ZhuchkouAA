@@ -1,0 +1,255 @@
+$color:#e9eae9;
+main{
+	a{
+		color:black;
+	}
+	.down-button {
+		@include button(3.5em, 190px, 11em, 30px auto 0 auto);
+	}
+	div{
+		position: relative;
+		font-size:112px;
+		text-align:start;
+		h3{
+			display: inline-block;
+			width:400px;
+			font-family:'OpenSans-Light', sans-serif;
+			text-align:end;
+			font-size:48px;
+		}
+		span {
+			display: inline-block;
+			font-family:'OpenSans-Light', sans-serif;
+			font-size:28.8px;
+		}
+	}
+	color:#646464;
+	font-family: 'fontello', sans-serif;
+	display: flex;
+	flex-direction: column;
+	margin-top: 5em;
+
+	div:nth-child(2n-1){
+		padding-left:.5em;
+		background-color: $color;
+		height:250px;
+		margin-bottom:1em;
+		width:70%;
+		border-radius:0 125px 125px 0;
+		span{
+			padding-left:2em;
+		}
+	}
+	div:nth-child(2n){
+		padding-right:.5em;
+		background-color: lighten($color,3%);
+		height:250px;
+		margin-bottom:1em;
+		width:70%;
+		align-self:flex-end;
+		border-radius:125px 0 0 125px;
+		span{
+			padding-right:2em;
+		}
+	}
+	div:first-child:before {
+		position:absolute;
+		content:'\e800';
+		top:69px;
+	}
+	div:nth-child(2):after {
+		position:absolute;
+		content: '\f2b5';
+		right:20px;
+		top:69px;
+	}
+	div:nth-child(3):before {
+		position: absolute;
+		top:69px;
+		content: '\e801';
+		
+	}
+	div:nth-child(4):after {
+		position:absolute;
+		content: '\e802';
+		right:20px;
+		top:69px;
+	}
+	div:nth-child(5):before {
+		position: absolute;
+		top:69px;
+		left:20px;
+		content: '\f164';
+		
+	}
+	div:nth-child(6):after {
+		position:absolute;
+		content: '\e803';
+		right:20px;
+		top:69px;
+	}
+	
+}
+@media (min-width:1000px){
+	main{
+	}
+}
+@media (min-width:1200px){
+	main{
+		.down-button{
+			display: none;
+		}
+		div:first-child:before{
+			transition: ease-out 0.5s;
+			font-size:30px;
+			left:110px;
+			top:40px;
+		}
+		div:first-child{
+			position: absolute;
+			top:55px;
+			left:72px;
+			width:200px;
+			h3{
+				font-size:20px;
+				position: absolute;
+				right:95px;
+				top:85px;
+			}
+			span{
+				font-size:14px;
+				position: absolute;
+				top:130px;
+				right:22px;
+			}
+		}
+
+		div:nth-child(3):before{
+			transition: ease-out 0.5s;
+			font-size:30px;
+			left:110px;
+			top:40px;
+		}
+		div:nth-child(3){
+			position: absolute;
+			top:340px;
+			left:72px;
+			width:200px;
+			h3{
+				font-size:20px;
+				position: absolute;
+				right:75px;
+				top:85px;
+			}
+			span{
+				font-size:14px;
+				position: absolute;
+				top:130px;
+				right:30px;
+			}
+		}
+		div:nth-child(5):before{
+			transition: ease-out 0.5s;
+			font-size:30px;
+			left:100px;
+			top:40px;
+		}
+		div:nth-child(5){
+			position: absolute;
+			top:625px;
+			left:72px;
+			width:200px;
+			h3{
+				font-size:20px;
+				position: absolute;
+				right:75px;
+				top:85px;
+			}
+			span{
+				font-size:14px;
+				position: absolute;
+				top:130px;
+				right:30px;
+			}
+		}
+		div:nth-child(2):after{
+			font-size:30px;
+			left:138px;
+			top:40px;
+		}
+		div:nth-child(2){
+			position: absolute;
+			top:55px;
+			right:72px;
+			width:225px;
+			h3{
+				font-size:20px;
+				position: absolute;
+				right:85px;
+				top:85px;
+			}
+			span{
+				font-size:14px;
+				position: absolute;
+				top:130px;
+				left:21px;
+			}
+		}
+		div:nth-child(4):after{
+			font-size:30px;
+			left:142px;
+			top:40px;
+		}
+		div:nth-child(4){
+			position: absolute;
+			top:340px;
+			right:72px;
+			width:225px;
+			h3{
+				font-size:20px;
+				position: absolute;
+				right:85px;
+				top:85px;
+			}
+			span{
+				font-size:14px;
+				position: absolute;
+				top:130px;
+				left:21px;
+			}
+		}
+		div:nth-child(6):after{
+			font-size:30px;
+			left:140px;
+			top:40px;
+		}
+		div:nth-child(6){
+			position: absolute;
+			top:625px;
+			right:72px;
+			width:225px;
+			h3{
+				font-size:20px;
+				position: absolute;
+				right:85px;
+				top:85px;
+			}
+			span{
+				font-size:14px;
+				position: absolute;
+				top:130px;
+				left:21px;
+			}
+		}
+		div:hover{ 
+			&:before{
+				font-size:40px;
+			}
+			&:after{
+				font-size:40px;
+			}
+		}
+
+
+	}
+}
