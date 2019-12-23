@@ -24,17 +24,17 @@
 	font-family: BankGothicBold;
 	img{
 		display: block;
-		width:720px;
+		width:250px;
 		margin-top:48px;
 	}
 	span:nth-child(2) {
-		font-size: 10.8em;
+		font-size: 3.5em;
     	padding-top: .1em;
     	display: block;
     	text-transform:uppercase;
 	}
 	span:nth-child(3) {
-		font-size: 6.1em;
+		font-size: 1.8em;
     	letter-spacing: 1.48em;
     	margin-right: .2em;
     	text-transform: uppercase;
@@ -57,7 +57,7 @@ header {
     	margin:0 auto;
 	}
 	& > a:nth-child(3) {
-		@include button(3.5em, 190px, 11em, 112px auto 0 auto);
+		@include button(1.5em, 70px, 10em, 80px auto 0 auto);
 	}
 }
 .socials {
@@ -65,13 +65,13 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
-	height:250px;
+	height:120px;
 	padding-bottom:2em;
 	a{
 		text-decoration: none;
 		color:black;
 		text-transform:uppercase;
-		font-size: 8em;
+		font-size: 2.3em;
 
 	}
 	a:first-child::before {
@@ -90,9 +90,50 @@ header {
 		content:"\f099";
 	}
 }
+
+@media (min-width:650px){
+	header{
+		.socials {
+			
+			height:150px;
+			a{
+				
+				font-size: 4em;
+
+	}}
+		& > a:nth-child(3) {
+		@include button(2.5em, 130px, 10em, 112px auto 0 auto);
+	}
+	}
+	.top-header{
+		img{
+			width:400px;
+		}
+		span:nth-child(2){
+			font-size: 5.8em;
+		}
+		span:nth-child(3) {
+			font-size: 3.3em;
+		}
+	}
+}
+@media (min-width:800px){
+	.top-header{
+		img{
+			width: 720px;
+		}
+		span:nth-child(2){
+			font-size: 10.3em;
+		}
+		span:nth-child(3) {
+			font-size: 4.6em;
+		}
+		
+	}
+}
 @media (min-width:1000px) {
 		 .top-header {
-		img{
+		 	img{
 			width:344px;
 		}
 		span:nth-child(2){
@@ -101,6 +142,8 @@ header {
 		span:nth-child(3) {
 			font-size: 2.9em;
 		}
+		
+		
 		}
 		header {
 			padding:0px 32px;

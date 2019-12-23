@@ -7,92 +7,143 @@ main{
 		@include button(3.5em, 190px, 11em, 30px auto 0 auto);
 	}
 	div{
+		display: flex;
 		position: relative;
-		font-size:112px;
-		text-align:start;
-		h3{
-			display: inline-block;
-			width:400px;
+		flex-direction: column;
+		align-items:center;
+		font-size:33px;
+		.headline{
+			
+			position: absolute;
+			
+			width:100%;
 			font-family:'OpenSans-Light', sans-serif;
-			text-align:end;
-			font-size:48px;
+			font-size:20px;
 		}
 		span {
-			display: inline-block;
+			display: block;
+			position: absolute;
+			
 			font-family:'OpenSans-Light', sans-serif;
-			font-size:28.8px;
+			font-size:15px;
+			width:235px;
 		}
 	}
 	color:#646464;
 	font-family: 'fontello', sans-serif;
 	display: flex;
 	flex-direction: column;
-	margin-top: 5em;
+	margin-top: 2.5em;
 
 	div:nth-child(2n-1){
-		padding-left:.5em;
+		
+		
 		background-color: $color;
 		height:250px;
 		margin-bottom:1em;
 		width:70%;
 		border-radius:0 125px 125px 0;
+		.headline{
+			text-align:end;
+			right:95px;
+			top:100px;
+		}
 		span{
-			padding-left:2em;
+			align-self: flex-end;
+			top:150px;
+			right:30px;
+			
 		}
 	}
 	div:nth-child(2n){
-		padding-right:.5em;
+		
 		background-color: lighten($color,3%);
 		height:250px;
 		margin-bottom:1em;
 		width:70%;
 		align-self:flex-end;
 		border-radius:125px 0 0 125px;
+		.headline{
+			text-align:start;
+			left:235px;
+			top:100px;
+			width:150px;
+		}
 		span{
-			padding-right:2em;
+			align-self: flex-start;
+			top:150px;
+			left:160px;
 		}
 	}
 	div:first-child:before {
 		position:absolute;
 		content:'\e800';
-		top:69px;
+		right:115px;
+		top:50px;
 	}
 	div:nth-child(2):after {
 		position:absolute;
 		content: '\f2b5';
-		right:20px;
-		top:69px;
+		left:255px;
+		top:50px;
 	}
 	div:nth-child(3):before {
 		position: absolute;
-		top:69px;
+		right:143px;
+		top:50px;
 		content: '\e801';
 		
 	}
 	div:nth-child(4):after {
 		position:absolute;
 		content: '\e802';
-		right:20px;
-		top:69px;
+		left:258px;
+		top:50px;
 	}
 	div:nth-child(5):before {
 		position: absolute;
-		top:69px;
-		left:20px;
+		right:145px;
+		top:50px;
 		content: '\f164';
 		
 	}
 	div:nth-child(6):after {
 		position:absolute;
 		content: '\e803';
-		right:20px;
-		top:69px;
+		left:265px;
+		top:50px;
 	}
 	
 }
-@media (min-width:1000px){
+
+@media (max-width:650px){
 	main{
+		div:nth-child(6):after{
+		left:130px;
 	}
+		div:nth-child(2):after{
+		left:120px;
+	}
+		div:nth-child(4):after{
+		left:125px;
+	}
+		div:nth-child(2n-1){
+		width:90%;
+	}
+		div:nth-child(2n){
+		width:90%;
+		.headline{
+				left:100px;
+			}
+		span{
+			left:35px;
+		}
+		}
+	
+	.down-button{
+		@include button(1.5em, 70px, 10em, 30px auto 0 auto);
+	}
+}
 }
 @media (min-width:1200px){
 	main{
@@ -102,15 +153,14 @@ main{
 		div:first-child:before{
 			transition: ease-out 0.5s;
 			font-size:30px;
-			left:110px;
-			top:40px;
+			
 		}
 		div:first-child{
 			position: absolute;
 			top:55px;
 			left:72px;
-			width:200px;
-			h3{
+			width:250px;
+			.headline{
 				font-size:20px;
 				position: absolute;
 				right:95px;
@@ -127,15 +177,14 @@ main{
 		div:nth-child(3):before{
 			transition: ease-out 0.5s;
 			font-size:30px;
-			left:110px;
-			top:40px;
+			right:130px;
 		}
 		div:nth-child(3){
 			position: absolute;
 			top:340px;
 			left:72px;
-			width:200px;
-			h3{
+			width:250px;
+			.headline{
 				font-size:20px;
 				position: absolute;
 				right:75px;
@@ -151,15 +200,14 @@ main{
 		div:nth-child(5):before{
 			transition: ease-out 0.5s;
 			font-size:30px;
-			left:100px;
-			top:40px;
+			left:90px;
 		}
 		div:nth-child(5){
 			position: absolute;
 			top:625px;
 			left:72px;
-			width:200px;
-			h3{
+			width:250px;
+			.headline{
 				font-size:20px;
 				position: absolute;
 				right:75px;
@@ -174,18 +222,17 @@ main{
 		}
 		div:nth-child(2):after{
 			font-size:30px;
-			left:138px;
-			top:40px;
+			left:125px;
 		}
 		div:nth-child(2){
 			position: absolute;
 			top:55px;
 			right:72px;
-			width:225px;
-			h3{
+			width:275px;
+			.headline{
 				font-size:20px;
 				position: absolute;
-				right:85px;
+				left:105px;
 				top:85px;
 			}
 			span{
@@ -197,18 +244,17 @@ main{
 		}
 		div:nth-child(4):after{
 			font-size:30px;
-			left:142px;
-			top:40px;
+			left:125px;
 		}
 		div:nth-child(4){
 			position: absolute;
 			top:340px;
 			right:72px;
-			width:225px;
-			h3{
+			width:275px;
+			.headline{
 				font-size:20px;
 				position: absolute;
-				right:85px;
+				left:105px;
 				top:85px;
 			}
 			span{
@@ -220,18 +266,19 @@ main{
 		}
 		div:nth-child(6):after{
 			font-size:30px;
-			left:140px;
-			top:40px;
+			left:135px;
 		}
 		div:nth-child(6){
 			position: absolute;
 			top:625px;
 			right:72px;
-			width:225px;
-			h3{
+			width:275px;
+			.headline{
 				font-size:20px;
+				display: inline;
+				width:50px;
 				position: absolute;
-				right:85px;
+				left:105px;
 				top:85px;
 			}
 			span{
