@@ -33,3 +33,5 @@
 ### Задание 3 [Спрайты](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework14.3)
 ## node.js + npm + sass
 ### Задание 1 [SCSS Designclub.by](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework17)
+## Итоговая работа по вёрстке
+### [project-wired](https://purpurpur374.github.io/project-wired/public)

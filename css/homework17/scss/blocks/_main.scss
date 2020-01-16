@@ -290,10 +290,10 @@ main{
 		}
 		div:hover{ 
 			&:before{
-				font-size:40px;
+				transform:scale(1.4);
 			}
 			&:after{
-				font-size:40px;
+				transform:scale(1.4);
 			}
 		}
 
