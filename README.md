@@ -34,6 +34,8 @@
 ## node.js + npm + sass
 ### Задание 1 [SCSS Designclub.by](https://github.com/AdukarIT/ZhuchkouAA/tree/master/css/homework17)
 ## Итоговая работа по вёрстке
-### [project-wired] (https://zhuchkouaa.github.io/project-wired/public/index.html)
+### [project-wired](https://zhuchkouaa.github.io/project-wired/public/index.html)
 ## Операторы. Циклы
 ### Tasks [while, for, if](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework20)
+## Функции
+### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework21)
