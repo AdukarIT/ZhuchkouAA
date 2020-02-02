@@ -39,3 +39,5 @@
 ### Tasks [while, for, if](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework20)
 ## Функции
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework21)
+## Поиск ошибок и отладка кода. Практика
+### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice)
