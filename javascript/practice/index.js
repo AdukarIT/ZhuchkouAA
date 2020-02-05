@@ -1,13 +1,16 @@
 /* 1th task*/
 function trigon(a,b,c){
-	if (c==Math.sqrt(b**2+a**2)){
+	if(a<=0 || b<=0 || c<=0){
+		alert('error')
+	}
+	else if (c==Math.sqrt(b**2+a**2)){
 		alert('true')
 		return true
 	}
-		alert('false')
+	else	alert('false')
 		return false
 }
-// trigon(10,24,26)
+//trigon(10,24,26)
 
 
 /* 2th task*/
@@ -29,15 +32,15 @@ function amount(c, d){
 		return ('не хватает ' + Math.ceil(c/2-d) + ' парт')
 	}
 	else if(((c+1)/2-d)<0){
-		alert(Math.floor((c+1)/2-d) + ' лишних парт')
-		return (Math.floor((c+1)/2-d) + ' лишних парт')
+		alert (Math.abs(Math.floor((c+1)/2-d)) + ' лишних парт')
+		return (Math.abs(Math.floor((c+1)/2-d)) + ' лишних парт')
 	}
 	alert('все в норме')
 
 
 }
 
-//amount(26, 13)
+//amount(24, 10)
 
 
 /* 4th task*/
@@ -144,7 +147,7 @@ function season(x){
 
 function seven(){
 	for(i=99; i>=10; i--){
-		if(i%7==0 || (i%10)%7==0 && (i%10!=0)){
+		if(i%7==0 || i%10==7){
 			console.log(i)
 		}
 	}
@@ -152,15 +155,21 @@ function seven(){
 
 //seven()
 
+
+
+
+
 /* 10-11th task*/
 function divider(x, y){
-	for(y; y<=x; y++){
-		if(x%y==0){
-			console.log(y)
+	for( ; x<=y ; x++ ){
+		console.log('делители для ' + x + ':')
+	for(let i=2 ; i <= x ; i++ ){
+		if(x%i==0){
+			console.log(i)
 		}
 	}
-}
-//divider(20, 2)
+	}}
+//divider(2, 245)
 
 /* 12th task*/
 function size(size, unit){
@@ -182,52 +191,74 @@ function size(size, unit){
 
 /* 13th task*/
 function commonFactor(x,y){
-	let i;
-	if(x>=y){
-	i=y;
-	}
-	else if(x<y){
-	i=x;
-	}
-	for(i ; i>0; i--){
-		if(x%i==0 && y%i==0){
-			alert(i)
-			return i
+	let divider=2;
+	let commonDivider=1;
+	while(x!=1){
+		if(x%divider==0){
+			x/=divider          
+			if(y%divider==0){
+				y/=divider        
+				commonDivider*=divider
+			}
+		}
+		else{
+			divider++
 		}
 	}
+	console.log(commonDivider)
 }
-
 //commonFactor(214255, 3367125)
 
 
+function euclid(x,y){
+	while(x!=0){
+		let i=x
+		x=y%x
+		y=i
+	}
+	alert(y)
+	return y
+}
+//euclid(214255,3367125)
 
 
 /* 14th task*/
-function first(x,y){
-	let i;
-	if(x>=y){
-	i=y;
+function commonFactorRec(x,y,divider=2,commonDivider=1){
+	if(x!=1){
+		if(x%divider==0){
+			x/=divider             
+			if(y%divider==0){
+				return commonFactorRec(x, y/=divider,divider,commonDivider*=divider)
+			}
+		}
+		else {
+			return commonFactorRec(x,y,divider=divider+1,commonDivider)
+		}
 	}
-	else if(x<y){
-	i=x;
-	}
-second()
-function second(){
-	if(x%i==0 && y%i==0){
-		alert(i)
-		return i;
-	}
+	console.log(commonDivider)
+}
+//commonFactorRec(214255,3367125)
 
-		--i
-		return second();
-}}
 
-//first(2920,4745)
+
+function euclidRec(x,y){
+	if(x==0){
+		alert(y)
+		return y
+	}
+	else{
+		return euclidRec(y%x,x)
+	}
+}
+//euclidRec(214255,3367125)
+
+
+
 
 /* 15th task*/
 function words(){
 	let n=+prompt('введите кол-во карандашей')
-	if(n>=5 && n<=20 || n%10>=5 && n%10<=9 || n%10==0 || n==0){
+	if(n%10>=5 && n%10<=9 || n%10==0 || n%100>=5 && n%100<=19){
 		alert(n + ' карандашей')
 	}
 	else if(n%10==1){
@@ -242,12 +273,13 @@ function words(){
 //words()
 
 
+
 /* 16th task*/
 
 // let c=+prompt('введите число')
 // 	a=1,
 // 	b=1;
-// for(b; b<=9; b++){
+// for(; b<=9; b++){
 // 	a=1
 // 	sum(c)
 // }
@@ -264,9 +296,24 @@ function words(){
 //     }
 // }
 
+function sum(){
+	c=+prompt('введите число')
+	let a=0;
+	let b=1;
+	while(a<10){
+		a+=1
+		b=1
+		while(b<10){
+			if(c==a*a+b*b){
+				alert('можно, эти числа ' + a +' и ' + b);
+				return
+			}
+			else{
+				b++
+			}
 
-
-
-
-
+	}}
+	alert('нельзя')
+}
+//sum()
 

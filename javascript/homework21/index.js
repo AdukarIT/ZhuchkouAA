@@ -1,28 +1,28 @@
  /*1th task*/
  function comparison(x,y,z){
-    if (x>y && x>z){
+    if (x>=y && x>=z){
     alert(x)
     return x
     }
-    else if(y>x && y>z){
+    else if(y>=x && y>=z){
     alert(y)
     return y
     }
-    else if(z>x && z>y){
+    else if(z>=x && z>=y){
     alert(z)
     return z
     }
 }
-//comparison(12,22,33)   
+//comparison(33,11,33)   
 
 
 
 
  /*2th task*/
- function sum(d,h,m){
+ function Sum(d,h,m){
     let sum=d*24*3600+h*3600+m*60;
     alert(sum)
-    return sum;
+    return Sum;
 }
 //sum(1,1,1) 
 
@@ -58,27 +58,30 @@ function factorRecursion(y){
 
 
  /*4th task*/
-let buf,
-	s='перевернутое число - ';
-function backNum(x){
-	if (x<1){
-		alert(s)
-		return s
+
+function number(x){
+	if(x===0){
+		return 0
 	}
-	buf=x%10
-	x=(x-buf)/10
-	s=s + buf
-	return backNum(x)
-}
-//backNum(123456789)
+	let buf=x;
+	let i=-1;
+	for( ; buf!=0 ; i++){
+		buf=(buf - buf%10)/10
+	}
+	return (x%10)*10**i + number((x-x%10)/10)
+}											
+
+// console.log(number(123456789000111))
+
 
 
  /*5th task*/
-let d,
+
+function eq(a,b,c){
+	let d,
 	x,
 	x1,
 	x2;
-function eq(a,b,c){
 	d=b**2-4*a*c
 	if (d<0){
 		console.log('нет корней')
