@@ -41,3 +41,5 @@
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework21)
 ## Поиск ошибок и отладка кода. Практика
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice)
+## Массивы
+### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework23)
