@@ -102,23 +102,24 @@ function addition(){
 function bubble(){
 	let random = getRandomArray(10);
 	let temp;
-	console.log(random)
+	let q=1;
 	rec()
 	function rec(){
+	while(q==1){
+		q=0;
 	for(i=1; i<random.length;i++){
 		if(random[i-1]>random[i]){
 			temp=random[i]
 			random[i]=random[i-1]
 			random[i-1]=temp
-			return rec()
-
+			q=1;
 		}
-	}}
-
+	}
+}
+	}
 	console.log(random)
 }
-
-//bubble()
+bubble()
 
 // 7. (*) Проверьте, есть ли в массиве два числа, сумма которых очень близка к 10 (9.99 < sum < 10.01). 
 // Если такая пара (или такие пары) есть, выведите их в консоль.
@@ -143,17 +144,40 @@ function sumTwoNumbers(){
 
 // 8. (*) Создайте массив той же длины, что исходный. На месте самого большого числа исходного массива
 //  в новом вставьте число 1, на месте второго по величине – 2 и так далее.
+function twoArray(){
+	let random = getRandomArray(10);
+	let randomSecond = getRandomArray(10);
+	let temp2=Infinity;
+	let serial=1;
+	for(let j=0; j<random.length; j++){
+		let temp=-1;
+	for(let i=0; i < random.length; i++){
+		if(temp < random[i] && random[i] < temp2 ){
+			temp = random[i]
+			}
+		}
+	for(let k=0; k<random.length; k++){
+				if(temp==random[k]){
+					randomSecond[k] = serial
+				}	
+		}
+	temp2=temp
+	serial=serial+1
+	}
+	console.log(random)
+	console.log(randomSecond)
+}
 
 
+//twoArray()
 
 
 
 
 
 // 9. (*) Сделайте сдвиг массива вправо на X позиций (X передайте в функцию в качестве аргумента). 
-// Элементы, которые после сдвига "уходят" за пределы его длины, переместите на освободившиеся первые Х позиций.
-
-
+// Элементы, которые после сдвига "уходят" за пределы его длины, 
+// переместите на освободившиеся первые Х позиций.
 
 
 
