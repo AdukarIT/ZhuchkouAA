@@ -40,6 +40,10 @@
 ## Функции
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework21)
 ## Поиск ошибок и отладка кода. Практика
-### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice)
+### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/function)
 ## Массивы
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework23)
+###[Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/arrays)
+## Объекты
+### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework24)
+###[Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/obj)
