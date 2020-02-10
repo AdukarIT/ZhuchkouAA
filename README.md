@@ -43,7 +43,7 @@
 ### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/function)
 ## Массивы
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework23)
-###[Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/arrays)
+### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/arrays)
 ## Объекты
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework24)
-###[Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/obj)
+### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/obj)
