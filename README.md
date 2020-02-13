@@ -47,3 +47,6 @@
 ## Объекты
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework24)
 ### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/obj)
+## Встроенные возможности JS
+### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework25)
+### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/method)
