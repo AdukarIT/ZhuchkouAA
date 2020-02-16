@@ -61,25 +61,41 @@ function isPalindrome(line) {
 // Если таких символов несколько, функция должна возвращать строку из этих символов.
 
 function repeatSymbol(str){
+  let obj = {};
   let n = -1;
   let sum = 0;
   let max;
+  let finalStr='символ(ы) - ';
   for( let i = 0 ; i < str.length ; i++){
     let temp = str[i]
     if(n>sum){
       sum=n
       max=str[i-1]
+      obj[str[i-1]]=sum+1
     }
+    else if(n==sum){
+      obj[str[i-1]]=n+1
+    }
+    
     n=-1;
-  for( let j = 0 ; j < str.length ; j++ ){
-    if(temp==str[j]){
-      n++
+    for( let j = 0 ; j < str.length ; j++ ){
+      if(temp==str[j] && j!=i){
+        n++
+      }
+    }}
+    let flag;
+    for(let key in obj){
+      flag=key
+      finalStr+=' ' + '\'' + key + '\''
     }
-  }}
-
-  console.log(max)
+  if(flag==undefined){
+    return('всех символов по одному')
+  }
+  else{
+    return(finalStr)
+  }
 }
-//repeatSymbol('gggwwwttrrss') доделать
+//console.log(repeatSymbol('qwertybnmuiopasdfghjklzxcvbnm1234567890-=,.'))
 
 
 
