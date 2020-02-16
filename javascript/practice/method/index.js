@@ -18,10 +18,8 @@ function array(n, min, max){
 
 function link(str){
   if(str.indexOf('https://', 0)==0 && str.indexOf('.html')==((str.length)-5)){
-    console.log(true)
     return true
   }
-  console.log(false)
   return false
 }
 
