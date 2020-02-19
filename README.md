@@ -50,3 +50,5 @@
 ## Встроенные возможности JS
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework25)
 ### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/method)
+## Продвинутый JS
+### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework26)
