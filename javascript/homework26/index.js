@@ -131,7 +131,7 @@ function newObj() {
 
 
 function newReduceObj() {
-	let states = data.reduce(function (obj, elem) {
+  let states = data.reduce(function (obj, elem) {
     let arr = [];
 
     if (obj[elem.state] == undefined) {
@@ -147,9 +147,9 @@ function newReduceObj() {
 
         arr.push(internalObj);
     }}
-		return obj
+    return obj
   }, {})
-	return states
+    return states
 }
 
 //console.log(newReduceObj.call(arr))
