@@ -139,6 +139,7 @@ function newReduceObj() {
     }
     for (let i = 0; i < data.length; i++) {
       let internalObj = {};
+
       if (elem.state == data[i].state) {
         internalObj.city = data[i].city;
         internalObj.population = data[i].population;
@@ -146,10 +147,8 @@ function newReduceObj() {
 
         arr.push(internalObj);
     }}
-    
 		return obj
   }, {})
-  
 	return states
 }
 
