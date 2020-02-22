@@ -1,25 +1,6 @@
 // 1. Напишите функцию, которая принимает в качестве параметра номер символа в таблице Unicode.
 //  Подсчитайте количество таких символов во всех элементах массива, как в задаче 3 из первой части практики.
 
-let arr = 'Разбейте текст этой задачи на отдельные слова, удаляя по пути точки и запятые,' +
-    ' а полученные слова сложите в массив. Напишите функцию, которая возвращает массив из тех же слов, ' +
-    'но развёрнутых задом наперёд, причём массив должен быть отсортирован по количеству букв в слове. ' +
-    'Напишите другую функцию, которая считает общее количество букв с во всех элементах массива.';
-
-function letterCounter(x) {
-  arr = arr.split('');
-  let n = 0;
-
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].charCodeAt() == x) {
-      n++
-    }
-  }
-  console.log(n)
-}
-
-
-
 // 2. Напишите функцию, которая будет возвращать частичную функцию от функции из задачи 1,
 //  фиксируя искомый символ. Например:
 
@@ -28,12 +9,29 @@ function letterCounter(x) {
 // console.log(countOfD(["dad", "rod", "doctor"])); // 4
 
 
-function returnSymbol(x, callback) {
-  console.log( String.fromCharCode(x) )
-  callback(x)
+function letterCounter(x) {
+  let fn = function(arr) {
+  let n = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    temp = arr[i].split('');
+    
+    for (let j = 0; j < temp.length; j++){
+    if (temp[j].charCodeAt() == x) {
+      n++
+    }
+  }
+}
+return n
+}
+return fn
 }
 
-//returnSymbol(1072, letterCounter)
+let countOfD = letterCounter(100);
+//console.log(countOfD(['dad', 'rod', 'doctor']))
+
+
+
 
 // Для решения задач 3-6 используйте файл uscities.js.
 
@@ -152,4 +150,4 @@ function newReduceObj() {
     return states
 }
 
-//console.log(newReduceObj.call(arr))
+//console.log( newReduceObj() )
