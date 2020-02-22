@@ -5,9 +5,10 @@
  	name: 'arnold',
  	birth: 1990
  }
-function first(obj,str){
-	for(let prop in obj){
-		if(prop==str){
+
+function first(obj,str) {
+	for (let prop in obj) {
+		if (prop == str) {
 			console.log('такое свойство есть : ' + prop)
 		}
 	}
@@ -21,21 +22,21 @@ function first(obj,str){
  Напишите функцию, которая получает "рецепт", подсчитывает, сколько каждого ингредиента нужно на одну порцию,
   и выводит информацию об этом в консоль.*/
 let recipe = {
-	n:2,
+	n: 2,
 	pizza: {
 	cheese: '200',
 	flour: '300',
 	tomato: '400',
 	}}
 
-function cook(obj){
-	for(let prop in obj){
-		if(prop=='n'){
-			number=obj[prop]
+function cook(obj) {
+	for (let prop in obj) {
+		if (prop == 'n') {
+			number = obj[prop];
 		}
 		// console.log(obj[prop])
-		for(let prop2 in obj[prop]){
-			console.log(prop2 + ' put ' + (obj[prop][prop2])/number + 'gram')
+		for (let prop2 in obj[prop]) {
+			console.log(prop2 + ' put ' + (obj[prop][prop2]) / number + 'gram')
 		}
 	}
 }
@@ -49,8 +50,8 @@ let cylinder = {
 	h: 33,
 	getVolume: volume
 }
-function volume(){
-	console.log(this.r*this.r*(Math.PI)*this.h)
+function volume() {
+	console.log(this.r * this.r * Math.PI * this.h)
 }
 
 //cylinder.getVolume()
@@ -70,14 +71,13 @@ function volume(){
   	sayHello: hello ,
   	fly: fly
   }
-function hello(){
+function hello() {
 	console.log('hello! my name is ' + this.name)
 }
-function fly(){
-	if(this.canFly){
+function fly() {
+	if (this.canFly) {
 		console.log('i can fly!')
-	}
-	else
+	} else
 	console.log('i can not fly:(')
 }
 

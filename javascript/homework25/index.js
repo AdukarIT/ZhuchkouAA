@@ -6,23 +6,25 @@
 // 	Например, пусть у исходного массива arr[0] = 19, тогда в новом массиве 
 // 	newArr[0] = {initial: 19, sqrt: 4.358898943540674, floor: true, ceil: false}.
 // 2. Добавьте в каждый элемент массива из задачи 1 ещё одно свойство: значение sqrt, округлённое до сотых
-function array(n, min, max){
-	let arr = [];
-	  for(i=1; i<=n; i++){
-	  arr.push(Math.floor(Math.random()*(max - min + 1)) + min)
+function array(n, min, max) {
+  let arr = [];
+  
+	for (i = 1; i <= n; i++){
+	arr.push( Math.floor(Math.random() * (max - min + 1)) + min )
 	}
 	  return arr
   }
 
-function addNewArr(){
-  let arr = array(10, 5, 30)
+function addNewArr() {
+  let arr = array(10, 5, 30);
   let newArr = [];
-	for(i=0; i<arr.length; i++){
+
+	for (let i = 0; i < arr.length; i++) {
     newArr[i] = {
       initial : arr[i],
-      sqrt : (Math.round(Math.sqrt(arr[i])*100))/100,
-      floor : Math.floor(Math.sqrt(arr[i]))===Math.round(Math.sqrt(arr[i])),
-      ceil : Math.ceil(Math.sqrt(arr[i]))===Math.round(Math.sqrt(arr[i]))
+      sqrt : ( Math.round( Math.sqrt(arr[i]) * 100)) / 100,
+      floor : Math.floor(Math.sqrt(arr[i])) === Math.round(Math.sqrt(arr[i])),
+      ceil : Math.ceil(Math.sqrt(arr[i])) === Math.round(Math.sqrt(arr[i]))
     }
   }
 }
@@ -33,69 +35,83 @@ function addNewArr(){
 // 3. Напишите функцию, которая определяет, является ли строка палиндромом.
 
 function isPalindrome(line) {
-  line=line.toLowerCase()
-	let original=line.split('');
-  let flag=1;
-  for(i=0; i<original.length; i++){
-  if(original[i]==' ' || original[i]==',' || original[i]==':' || original[i]=='.' || original[i]=='-'
-  || original[i]==';'){
+  line = line.toLowerCase();
+	let original = line.split('');
+  let flag = 1;
+
+  for (let i = 0; i < original.length; i++) {
+  if (
+      original[i] == ' ' ||
+      original[i] == ',' ||
+      original[i] == ':' ||
+      original[i] == '.' ||
+      original[i] == '-' ||
+      original[i] == ';'
+  ) {
     original.splice(i,1)
     i--
   }}
-	for(i=0; i<original.length; i++){
-		if(original[i]!=original.reverse()[i]){
-      flag=0;
+
+	for (let i = 0; i < original.length; i++) {
+		if (original[i] != original.reverse()[i]) {
+      flag = 0;
       return false
 		}
-	}
-	if(flag){
+  }
+  
+	if (flag) {
   return true
 	}
 }
 
-//isPalindrome('Ты, милок, иди яром: у дороги мина, за дорогой огород, а за ним и город у моря; иди, коли мыт')
+// console.log( isPalindrome('Ты, милок, иди яром: у дороги мина, за дорогой огород, ' +
+//    'а за ним и город у моря; иди, коли мыт') )
 
 
 
 // 4. Напишите функцию, которая принимает строку и возвращает символ, который встречается в ней чаще всего. 
 // Если таких символов несколько, функция должна возвращать строку из этих символов.
 
-function repeatSymbol(str){
+function repeatSymbol(str) {
   let obj = {};
   let n = -1;
   let sum = 0;
   let max;
   let finalStr='символ(ы) - ';
-  for( let i = 0 ; i < str.length ; i++){
-    let temp = str[i]
-    if(n>sum){
-      sum=n
-      max=str[i-1]
-      obj[str[i-1]]=sum+1
+
+  for ( let i = 0 ; i < str.length ; i++) {
+    let temp = str[i];
+
+    if (n > sum) {
+      sum = n;
+      max = str[i-1];
+      obj[str[i - 1]] = sum + 1;
     }
-    else if(n==sum){
-      obj[str[i-1]]=n+1
+    else if (n == sum) {
+      obj[str[i - 1]] = n + 1
     }
     
-    n=-1;
-    for( let j = 0 ; j < str.length ; j++ ){
-      if(temp==str[j] && j!=i){
+    
+    n = -1;
+
+    for ( let j = 0 ; j < str.length ; j++ ) {
+      if (temp == str[j] && j != i) {
         n++
       }
     }}
     let flag;
-    for(let key in obj){
-      flag=key
-      finalStr+=' ' + '\'' + key + '\''
+    for (let key in obj) {
+      flag = key;
+      finalStr+=' ' + '\'' + key + '\'';
     }
-  if(flag==undefined){
-    return('всех символов по одному')
-  }
-  else{
-    return(finalStr)
+  if (flag == undefined) {
+    return ('всех символов по одному')
+  } else {
+    return (finalStr)
   }
 }
-//console.log(repeatSymbol('qwertybnmuiopasdfghjklzxcvbnm1234567890-=,.'))
+
+//console.log( repeatSymbol('qwerddtybnmuibopasdfghjklzxcvbnm1234567890') )
 
 
 
@@ -103,13 +119,13 @@ function repeatSymbol(str){
 // Функция ищет ВСЕ вхождения search в str, заменяет каждую подстроку search на подстроку replace и 
 // возвращает результат.
 
-function replaceStr(str, search, replace){
-  for(let i=0;i<str.length;i++){
-    if(str.indexOf(search, i)!=-1){
-  n=str.indexOf(search, i)
-  str=str.split('')
-  str.splice(n , search.length, replace )
-  str=str.join('')
+function replaceStr (str, search, replace) {
+  for (let i = 0; i < str.length; i++) {
+    if (str.indexOf(search, i) != -1) {
+  n = str.indexOf(search, i);
+  str = str.split('');
+  str.splice(n , search.length, replace );
+  str = str.join('')
     }
 }
 return str
@@ -122,14 +138,15 @@ return str
 
 // 6. Напишите функцию, которая замяняет первую букву каждого слова в строке на такую же большую.
 
-function Upper(str){
-  str=str.split('')
-  str[0]=str[0].toUpperCase()
-  for(i=0; i<str.length; i++){
-  if(str[i]==' '){
-    str[i+1]=str[i+1].toUpperCase()
+function Upper(str) {
+  str = str.split('');
+  str[0] = str[0].toUpperCase();
+
+  for (let i = 0; i < str.length; i++) {
+  if (str[i] == ' ') {
+    str[i + 1] = str[i + 1].toUpperCase();
   }}
-  str=str.join('')
+  str = str.join('');
   console.log(str)
 }
 
@@ -140,17 +157,22 @@ function Upper(str){
 // 7. Напишите функцию, которая заменяет все повторяющиеся символы в строке на звёздочки.
 //  Например, строка "я учусь программированию" должна преобразоваться в "я уч*сь прог*ам*и**в*н*ю".
 
-function replaceSymbol(str){
-  str=str.split('')
-  for(let i=0; i<str.length; i++){
+function replaceSymbol(str) {
+  str = str.split('');
+
+  for (let i = 0; i < str.length; i++) {
     temp = str[i];
-    for(let j = 0; j<str.length; j++){
-      if(str[i]!=' ' && i!=j && temp==str[j]){
-        str[j]='*'
+    for (let j = 0; j < str.length; j++) {
+      if (
+          str[i] != ' ' &&
+          i != j &&
+          temp == str[j]
+      ){
+        str[j] = '*';
       }
     }
   }
-  str=str.join('')
+  str = str.join('');
   console.log(str)
 }
 
@@ -159,15 +181,15 @@ function replaceSymbol(str){
 
 
 // 8. Напишите функцию, которая возвращает текущий день недели на русском языке.
-function dayOfWeek(userDate){
+function dayOfWeek(userDate) {
   let now = new Date();
   let x;
-  if(userDate){
+
+  if (userDate) {
     now = userDate
-    x=Math.ceil(now.getTime()/86400000%7)
-  }
-  else{
-  x=Math.floor(Date.now()/86400000%7)
+    x = Math.ceil(now.getTime() / 86400000 % 7)
+  } else {
+  x = Math.floor(Date.now() / 86400000 % 7)
   }
   switch(x) {
     case 0:
@@ -200,11 +222,11 @@ function dayOfWeek(userDate){
 // 9. Напишите функцию, которая принимает у пользователя дату в формате "ДД-ММ-ГГГГ" и, 
 // используя функцию из задачи 8, выдаёт в консоль день недели для этой даты.
 
-function dayOfUserDate(str){
-  day=str.slice(0, 2)
-  month=str.slice(3, 5)-1
-  year=str.slice(6)
-  let newDate =new Date(year,month,day);
+function dayOfUserDate(str) {
+  day = str.slice(0, 2)
+  month = str.slice(3, 5)-1
+  year = str.slice(6)
+  let newDate = new Date(year, month, day);
   dayOfWeek(newDate)
 }
 //dayOfUserDate('24-01-1994')
@@ -219,34 +241,33 @@ function dayOfUserDate(str){
 function happyBirthday(str){
   let now = new Date();
   let temp;
-  day=str.slice(0, 2)
-  month=str.slice(3, 5)-1
-  year=now.getFullYear()
-  let birthday =new Date(year,month,day);
-  if(Date.parse(birthday)-Date.now()<0){
-    birthday.setFullYear(birthday.getFullYear() + 1)
-    temp=(Date.parse(birthday)-Date.now())/(1000*60*60*24)
-    console.log('осталось ' + Math.floor(temp) + ' дней до дня рождения')
-  }
-  else{
-    console.log('осталось ' + Math.floor((Date.parse(birthday)-Date.now())/(1000*60*60*24)) + ' дней до дня рождения')
-  }
+  let day = str.slice(0, 2);
+  let month = str.slice(3, 5)-1;
+  let year = now.getFullYear();
+  let birthday =new Date(year, month, day);
 
+  if (Date.parse(birthday) - Date.now() < 0) {
+    birthday.setFullYear(birthday.getFullYear() + 1);
+    temp = (Date.parse(birthday) - Date.now()) / (1000 * 60 * 60 * 24);
+    console.log('осталось ' + Math.floor(temp) + ' дней до дня рождения')
+  } else{
+    console.log('осталось ' + Math.floor((Date.parse(birthday) - Date.now())/(1000 * 60 * 60 * 24)) + ' дней до дня рождения')
+  }
 }
 //happyBirthday('24-10-1994')
 
-function happy1000Birthday(str){
-  day=str.slice(0, 2)
-  month=str.slice(3, 5)-1
-  year=str.slice(6, 10)
+function happy1000Birthday(str) {
+  let day = str.slice(0, 2);
+  let month = str.slice(3, 5)-1;
+  let year = str.slice(6, 10);
   let birthday = new Date(year, month, day);
-  number=Math.floor(Date.parse(birthday)/1000/60/60/24)%1000
-  temp=1000-number;
-  if(number===0){
+  let number = Math.floor(Date.parse(birthday) / 1000 / 60 / 60 / 24) % 1000;
+  let temp = 1000 - number;
+
+  if ( number === 0) {
     console.log(Date())
-  }
-  else{
-  let next1000Birthday =new Date(Date.now() + temp*24*60*60*1000);
+  } else{
+  let next1000Birthday = new Date(Date.now() + temp * 24 * 60 * 60 * 1000);
   console.log(next1000Birthday)
   }
 
@@ -260,3 +281,40 @@ function happy1000Birthday(str){
 // ошибку. Используя задачу 2 из практики, создайте массив целых чисел. Вызовите написанную функцию 
 // для каждого элемента, отлавливая ошибки и выводя в консоль сообщения и о них, и об успешных
 //  результатах. Массив должен быть пройден до конца, несмотря на ошибки!
+
+function array(n, min, max){
+  let arr = [];
+	for(i=1; i<=n; i++){
+    arr.push(Math.floor(Math.random()*(max - min + 1)) + min)
+  }
+    return arr
+}
+
+function square(number) {
+  let temp = Math.sqrt(number);
+
+  if (temp == Math.round(temp)) {
+    console.log('корень числа ' + number + ' -> ' + temp);
+
+    return temp
+  } 
+  else throw new Error('Число не целое')
+}
+
+function catchErr() {
+let arr = array(20, 5, 50);
+
+for (let i = 0; i < arr.length; i++) {
+  try {
+    square(arr[i])
+  }
+  catch(Error) {
+    console.log('Ошибка! Корень числа ' + arr[i] + ' не целый!')
+  }
+  finally {
+    console.log('Число проверено')
+  }
+}
+}
+
+//catchErr()
