@@ -52,3 +52,5 @@
 ### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/method)
 ## Продвинутый JS
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework26)
+## DOM. Работа со страницей
+### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework27)
