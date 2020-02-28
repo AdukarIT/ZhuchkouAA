@@ -134,15 +134,15 @@ flag = 0;
 darkenBackground.style.opacity = '0';
 darkenBackground.style.zIndex = '-1';
 document.body.removeEventListener('click', closeFullImage);
-  }
-  else {
+  } else {
     let n = +event.target.getAttribute('alt') + 1;
     let newSrc = ("./fancybox/" + n +  ".jpg");
-    document.querySelector('.modal').setAttribute('src', newSrc)
-    document.querySelector('.modal').setAttribute('alt', n)
-
-    if (n === 9) {
-      document.querySelector('.modal').setAttribute('alt', 0)
-    }
+    if (n === 10) {
+      document.querySelector('.modal').setAttribute('alt', 1);
+      document.querySelector('.modal').setAttribute('src', './fancybox/1.jpg');
+    } else {
+    document.querySelector('.modal').setAttribute('src', newSrc);
+    document.querySelector('.modal').setAttribute('alt', n);
+  }
   }
 }
