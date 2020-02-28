@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+	.bordered {
+		border: 3px solid;
+	}
+
+	.highlight {
+		border: 3px ridge gold;
+	}
+
+	.striped {
+		border: 3px dashed;
+	}
+
+	#bg_layer {
+		left: 0px;
+		top: 0px;
+		position: absolute;
+    	width: 100%;
+    	background: #000;
+    	opacity: 0;
+    	transition: 0.3s;
+	}
+
+	.modal {
+		z-index: 20;
+		position: absolute;
+		border: 5px solid white;
+	}
+
+</style>
+<meta name="viewport" content="width=device-width">
+<title>events</title>
+</head>
+<body>
+	<div class='copy-input'>
+		<input value='нас много' class='input' type="text">
+		<button class='btn'>copy</button>		
+	</div>
+	
+	<table>
+ 		<tr>
+   			<td>ячейка</td>
+   			<td>ячейка</td>
+   			<td>ячейка</td>
+   			<td>ячейка</td>
+  		</tr>
+  		<tr>
+   			<td>ячейка</td>
+   			<td>ячейка</td>
+   			<td>ячейка</td>
+   			<td>ячейка</td>
+  		</tr>
+  		<input name='radio' value='bordered' type="radio">
+  		<input name='radio' value='striped' type="radio">
+  		<input name='radio' value='highlight' type="radio">
+	</table>
+	<button class='alert'>я текст в кнопке</button>
+	<button class='off-alert'>выключить уведомление</button>
+
+	<div class='targetInfo'>я див</div>
+	<p class='targetInfo'>параграф</p>
+	<button class='targetInfo'>кнопка</button>
+	<a class='targetInfo' href="#">ссылка</a>
+	<img id='closed' src="closed.jpg" alt="pic">
+	<br>
+	<div id='bg_layer'></div>
+	<img class='fancybox' width='200px' src="./fancybox/1.jpg" alt="1">
+	<img class='fancybox' width='200px' src="./fancybox/2.jpg" alt="2">
+	<img class='fancybox' width='200px' src="./fancybox/3.jpg" alt="3">
+	<img class='fancybox' width='200px' src="./fancybox/4.jpg" alt="4">
+	<img class='fancybox' width='200px' src="./fancybox/5.jpg" alt="5">
+	<img class='fancybox' width='200px' src="./fancybox/6.jpg" alt="6">
+	<img class='fancybox' width='200px' src="./fancybox/7.jpg" alt="7">
+	<img class='fancybox' width='200px' src="./fancybox/8.jpg" alt="8">
+	<img class='fancybox' width='200px' src="./fancybox/9.jpg" alt="9">
+	<script src='index.js' type='text/javascript'></script>
+</body>
+</html>

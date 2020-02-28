@@ -54,3 +54,6 @@
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework26)
 ## DOM. Работа со страницей
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework27)
+## События. Координаты на странице
+### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework28)
+### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/events)
