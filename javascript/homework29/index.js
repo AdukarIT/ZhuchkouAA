@@ -152,9 +152,22 @@ console.log(regTime.test('9.50 am'))
 
 // 7. Удалите одной регуляркой все повторяющиеся слова из строки, например для 'dsf xxx xxx sd' должно вернуть 'dsf xxx sd'.
 
+function removeRepeatingWords(str) {
+  let newStr = str.split(' ');
 
+  for ( let i = 0; i < newStr.length; i++) {
+    let regExp = new RegExp('^' + newStr[i] + '$');
+    newStr.forEach(function (elem, index) {
+      if (regExp.test(elem) && i != index) {
+        newStr.splice(index, 1);
+        index--
+      }
+    });
+  }
+  return newStr.join(' ')
+}
 
-
+removeRepeatingWords('dsf xxx xxx 1 sd23d ds32adas 3 das323d 2 gdfsxxxgfvds xxx fd32fdf dasdgds xxx 1 dasddddasd fsdfdsfds')
 
 
 
