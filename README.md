@@ -59,3 +59,6 @@
 ### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/events)
 ## Формы
 ### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework29)
+## ООП в Javascript
+### [Tasks](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/homework30)
+### [Practice](https://github.com/AdukarIT/ZhuchkouAA/tree/master/javascript/practice/oop)
